@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
-    <title>Password Generator</title>
-  </head>
-  <body>
-    <div class="password-container">
-      <h1>Password Generator</h1>
-      <div class="password-result">
-        <p class="password-result-text"></p>
-        <i class="fa-regular fa-copy password-result-icon"></i>
-      </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" />
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <div class="password-container">
+            <h1>Password Generator</h1>
+            <div class="password-result">
+                <p class="password-result-text"></p>
+                <i class="fa-regular fa-copy password-result-icon"></i>
+            </div>
 
-      <p class="password-slider-text">Length : <span class="password-slider-text-length"></span></p>
-      <div class="password-slider-container">
-        <p class="password-slider-min"></p>
-        <input type="range" min="4" max="50" value="10" class="password-slider-input" />
-        <p class="password-slider-max"></p>
-      </div>
+            <p class="password-slider-text">Length : <span class="password-slider-text-length"></span></p>
+            <div class="password-slider-container">
+                <p class="password-slider-min"></p>
+                <input type="range" min="4" max="20" value="8" class="password-slider-input" />
+                <p class="password-slider-max"></p>
+            </div>
 
-      <ul class="password-settings-container">
-        <li class="password-setting">
-          <span class="password-setting-text">Include Uppercase</span>
-          <div class="password-setting-toggle">
-            <input type="checkbox" class="checkbox" id="checkbox1" />
-            <label for="checkbox1" class="label">
-              <div class="ball"></div>
-            </label>
-          </div>
-        </li>
-        <li class="password-setting">
-          <span class="password-setting-text">Include Lowercase</span>
-          <div class="password-setting-toggle">
-            <input type="checkbox" class="checkbox" id="checkbox2" />
-            <label for="checkbox2" class="label">
-              <div class="ball"></div>
-            </label>
-          </div>
-        </li>
-        <li class="password-setting">
-          <span class="password-setting-text">Include Numbers</span>
-          <div class="password-setting-toggle">
-            <input type="checkbox" class="checkbox" id="checkbox3" />
-            <label for="checkbox3" class="label">
-              <div class="ball"></div>
-            </label>
-          </div>
-        </li>
-        <li class="password-setting">
-          <span class="password-setting-text">Include Symbols</span>
-          <div class="password-setting-toggle">
-            <input type="checkbox" class="checkbox" id="checkbox4" />
-            <label for="checkbox4" class="label">
-              <div class="ball"></div>
-            </label>
-          </div>
-        </li>
-      </ul>
+            <ul class="password-settings-container">
+                <li class="password-setting">
+                    <span class="password-setting-text">Include Uppercase</span>
+                    <div class="password-setting-toggle">
+                        <input type="checkbox" class="checkbox" id="checkbox1" />
+                        <label for="checkbox1" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </li>
+                <li class="password-setting">
+                    <span class="password-setting-text">Include Lowercase</span>
+                    <div class="password-setting-toggle">
+                        <input type="checkbox" class="checkbox" id="checkbox2" />
+                        <label for="checkbox2" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </li>
+                <li class="password-setting">
+                    <span class="password-setting-text">Include Numbers</span>
+                    <div class="password-setting-toggle">
+                        <input type="checkbox" class="checkbox" id="checkbox3" />
+                        <label for="checkbox3" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </li>
+                <li class="password-setting">
+                    <span class="password-setting-text">Include Symbols</span>
+                    <div class="password-setting-toggle">
+                        <input type="checkbox" class="checkbox" id="checkbox4" />
+                        <label for="checkbox4" class="label">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
 
-      <button class="password-btn">Generate Password</button>
-    </div>
-  </body>
+            <button class="password-btn">Generate Password</button>
+        </div>
+    </body>
 </html>

@@ -1,51 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
-  --dark-color: #2a2a2a;
-  --light-dark-color: #3b3b3b;
-  --medium-dark-color: #212121;
-  --blue-color: rgb(17, 144, 255);
-  --white-color: #fff;
-  --gray-color: rgb(101, 101, 101);
+    font-size: 62.5%;
+    --dark-color: #2a2a2a;
+    --light-dark-color: #3b3b3b;
+    --medium-dark-color: #212121;
+    --blue-color: rgb(17, 144, 255);
+    --white-color: #fff;
+    --gray-color: rgb(101, 101, 101);
 }
 
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
-  background: rgb(17, 144, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background: rgb(17, 144, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-.password-container{
+.password-container {
     max-width: 60rem;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     background: var(--dark-color);
     padding: 2rem;
     border-radius: 0.5rem;
 }
 
-.password-container > h1{
+.password-container > h1 {
     color: var(--white-color);
     font-size: 3rem;
     font-weight: 500;
 }
 
-.password-container .password-result{
+.password-container .password-result {
     margin-top: 1rem;
     border-radius: 0.5rem;
     display: flex;
@@ -55,14 +55,14 @@ li{
     padding: 0.5rem;
 }
 
-.password-result .password-result-text{
+.password-result .password-result-text {
     color: var(--white-color);
     font-size: 2rem;
     font-weight: 500;
     padding: 0 0 0 1rem;
 }
 
-.password-result .password-result-icon{
+.password-result .password-result-icon {
     background: var(--blue-color);
     font-size: 2rem;
     padding: 1rem;
@@ -70,7 +70,7 @@ li{
     cursor: pointer;
 }
 
-.password-result .password-result-icon:active{
+.password-result .password-result-icon:active {
     transform: scale(0.95);
 }
 
@@ -81,12 +81,12 @@ li{
     font-weight: 400;
 }
 
-.password-slider-text .password-slider-text-length{
+.password-slider-text .password-slider-text-length {
     font-weight: 500;
     color: var(--blue-color);
 }
 
-.password-slider-container{
+.password-slider-container {
     padding: 1rem 1.5rem;
     margin-top: 0.5rem;
     border-radius: 0.5rem;
@@ -97,13 +97,13 @@ li{
 }
 
 .password-slider-container .password-slider-min,
-.password-slider-container .password-slider-max{
+.password-slider-container .password-slider-max {
     font-size: 1.6rem;
     color: var(--blue-color);
     font-weight: 500;
 }
 
-.password-slider-container .password-slider-input{
+.password-slider-container .password-slider-input {
     -webkit-appearance: none;
     border-radius: 0.5rem;
     width: 85%;
@@ -113,7 +113,7 @@ li{
     z-index: 5;
 }
 
-.password-slider-container .password-slider-input::after{
+.password-slider-container .password-slider-input::after {
     content: "";
     position: absolute;
     top: 0;
@@ -125,7 +125,7 @@ li{
     z-index: 10;
 }
 
-.password-slider-container .password-slider-input::-webkit-slider-thumb{
+.password-slider-container .password-slider-input::-webkit-slider-thumb {
     -webkit-appearance: none;
     background: white;
     height: 2rem;
@@ -136,11 +136,11 @@ li{
     cursor: pointer;
     z-index: 15;
 }
-.password-slider-container .password-slider-input::-webkit-slider-thumb:hover{
+.password-slider-container .password-slider-input::-webkit-slider-thumb:hover {
     transform: scale(1.2);
 }
 
-.password-settings-container{
+.password-settings-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -148,7 +148,7 @@ li{
     gap: 1rem;
 }
 
-.password-setting{
+.password-setting {
     padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@ li{
     background-color: var(--light-dark-color);
 }
 
-.password-setting .password-setting-text{
+.password-setting .password-setting-text {
     font-size: 1.8rem;
     letter-spacing: 0.5px;
     color: var(--white-color);
@@ -168,11 +168,11 @@ li{
 
 } */
 
-.password-setting-toggle .checkbox{
+.password-setting-toggle .checkbox {
     display: none;
 }
 
-.password-setting-toggle .label{
+.password-setting-toggle .label {
     display: block;
     position: relative;
     width: 6rem;
@@ -183,7 +183,7 @@ li{
     transition: all 0.3s ease;
 }
 
-.password-setting-toggle .label .ball{
+.password-setting-toggle .label .ball {
     position: absolute;
     top: 50%;
     left: 0.3rem;
@@ -193,20 +193,17 @@ li{
     border-radius: 50%;
     background: var(--white-color);
     transition: all 0.3s ease;
-    
 }
 
-.password-setting-toggle .checkbox:checked + .label{
+.password-setting-toggle .checkbox:checked + .label {
     background: var(--blue-color);
 }
 
-
-.password-setting-toggle .checkbox:checked + .label .ball{
+.password-setting-toggle .checkbox:checked + .label .ball {
     left: 3.2rem;
 }
 
-
-.password-btn{
+.password-btn {
     margin-top: 2rem;
     width: 100%;
     border: none;
@@ -221,7 +218,6 @@ li{
     position: relative;
 }
 
-.password-btn:active{
+.password-btn:active {
     top: 2px;
 }
-
